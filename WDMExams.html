@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WDstyle.css">
+    <link rel="icon" href="Images/logonimeg.png">
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Mortel: E-Portfolio | Web Development - Exams</title>
+</head>
+
+<body style="background-color: #F8F4F8;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navigationHead">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logonimeg.png" alt="Mortel Logo" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+  <!-- nav home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home" id="go-to-home">Home</a>
+          </li>
+  <!-- nav about -->
+          <li class="nav-item">
+            <a class="nav-link" href="#About" id="go-to-about">About</a>
+          </li>
+  <!-- nav skills -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills" id="go-to-skills">Skills</a>
+          </li>
+  <!-- nav contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact" id="go-to-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown show btn-group dropleft" id="dropDownMenu">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        WebDev
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <p class="dropdown-header">Midterm</p>
+        <a class="dropdown-item" href="WDMQuiz.html">Quizzes</a>
+        <a class="dropdown-item" href="WDMActivities.html">Activities</a>
+        <a class="dropdown-item" href="WDMExams.html">Exams</a>
+        <p class="dropdown-header">Finals</p>
+        <a class="dropdown-item" href="webdevFINAL.html">Quizzes</a>
+        <a class="dropdown-item" href="webdevFINAL.html">Activities</a>
+        <a class="dropdown-item" href="webdevFINAL.html">Exams</a>
+      </div>
+    </div>
+
+    <div class="dropdown show btn-group dropleft"  id="dropDownMenu">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        DataAd
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <p class="dropdown-header">Midterm</p>
+        <a class="dropdown-item" href="DAquiz.html">Quizzes</a>
+        <a class="dropdown-item" href="DAActivities.html">Activities</a>
+        <a class="dropdown-item" href="DAexam.html">Exams</a>
+        <p class="dropdown-header">Finals</p>
+        <a class="dropdown-item" href="dataAdFINAL.html">Quizzes</a>
+        <a class="dropdown-item" href="dataAdFINAL.html">Activities</a>
+        <a class="dropdown-item" href="dataAdFINAL.html">Exams</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="WebDev-Header">
+    <div class="WebDev-Title">
+      <p class="page-title">WEB<br>DEVELOPMENT</p>
+      <div>
+        <div class="midterm-final">
+          <a href="WDMQuiz.html"><u>Midterm</u></a>
+          <a href="webdevFINAL.html">Final</a>
+        </div>
+      </div>
+    </div>
+    <div class="WebDev-Buttons">
+      <div class="WebDev-Button-Quiz">
+        <a href="WDMQuiz.html"><p>Quizzes</p></a>
+      </div>
+      <div class="WebDev-Button-Activity">
+        <a href="WDMActivities.html"><p>Activities</p></a>
+      </div>
+      <div class="WebDev-Button-Exam" id="chosen-category">
+        <a href=""><p>Exams</p></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="WebDev-Content">
+    <div class="Content-Section">
+      <div class="Content" id="quizContent">
+<!-- Quiz 1 -->
+        <div>
+          <div class="Content-Text">
+            <p class="Content-HeadText">No Exams so far</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <script src="wdscript.js"></script>
+      <footer>
+        <p>@MegMortel | BSIT 3-1N</p>
+      </footer>
+</body>
+</html>

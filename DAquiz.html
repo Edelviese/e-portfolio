@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DAstyle.css">
+    <link rel="icon" href="Images/logonimeg.png">
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Mortel: E-Portfolio | Database Administration - Quiz</title>
+</head>
+
+<body style="background-color: #F8F4F8;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navigationHead">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logonimeg.png" alt="Mortel Logo" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+  <!-- nav home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home" id="go-to-home">Home</a>
+          </li>
+  <!-- nav about -->
+          <li class="nav-item">
+            <a class="nav-link" href="#About" id="go-to-about">About</a>
+          </li>
+  <!-- nav skills -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills" id="go-to-skills">Skills</a>
+          </li>
+  <!-- nav contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact" id="go-to-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown show btn-group dropleft" id="dropDownMenu">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        WebDev
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <p class="dropdown-header">Midterm</p>
+        <a class="dropdown-item" href="WDMQuiz.html">Quizzes</a>
+        <a class="dropdown-item" href="WDMActivities.html">Activities</a>
+        <a class="dropdown-item" href="WDMExams.html">Exams</a>
+        <p class="dropdown-header">Finals</p>
+        <a class="dropdown-item" href="webdevFINAL.html">Quizzes</a>
+        <a class="dropdown-item" href="webdevFINAL.html">Activities</a>
+        <a class="dropdown-item" href="webdevFINAL.html">Exams</a>
+      </div>
+    </div>
+
+    <div class="dropdown show btn-group dropleft"  id="dropDownMenu">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        DataAd
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <p class="dropdown-header">Midterm</p>
+        <a class="dropdown-item" href="DAquiz.html">Quizzes</a>
+        <a class="dropdown-item" href="DAActivities.html">Activities</a>
+        <a class="dropdown-item" href="DAexam.html">Exams</a>
+        <p class="dropdown-header">Finals</p>
+        <a class="dropdown-item" href="dataAdFINAL.html">Quizzes</a>
+        <a class="dropdown-item" href="dataAdFINAL.html">Activities</a>
+        <a class="dropdown-item" href="dataAdFINAL.html">Exams</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="DataAd-Header">
+    <div class="DataAd-Title">
+      <p class="page-title">DATABASE<br>ADMINISTRATION</p>
+      <div>
+        <div class="midterm-final">
+          <a href="DAquiz.html"><u>Midterm</u></a>
+          <a href="dataAdFINAL.html">Final</a>
+        </div>
+      </div>
+    </div>
+    <div class="DataAd-Buttons">
+      <div class="DataAd-Button-Quiz" id="chosen-category">
+        <a href="DAquiz.html"><p>Quizzes</p></a>
+      </div>
+      <div class="DataAd-Button-Activity">
+        <a href="DAActivities.html"><p>Activities</p></a>
+      </div>
+      <div class="DataAd-Button-Exam">
+        <a href="DAexam.html"><p>Exams</p></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="DataAd-Content">
+    <div class="Content-Section">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#DataAd-Content" onclick="showQuiz('quiz-one')">Quiz 1</a></li>
+          <li class="page-item"><a class="page-link" href="#DataAd-Content" onclick="showQuiz('quiz-ref')">Reflection</a></li>
+        </ul>
+      </nav>
+      <div class="Content" id="quizContent">
+<!-- Quiz 1 -->
+        <div id="quiz-one" class="quizzes">
+          <div class="Content-Text">
+            <p class="Content-HeadText">Quiz Details</p>
+            <table class="table">
+              <tbody>
+                <tr class="Number">
+                  <th scope="row">Quiz Number</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th scope="row">Date Submitted</th>
+                  <td>October 2</td>
+                </tr>
+                <tr class="Score">
+                  <th scope="row">Score</th>
+                  <td>28/30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="File-Preview">
+            <p class="Content-HeadText">Preview:</p>
+            <img src="Images/DataAd/Quizzes/Quiz1_DataAd.png" alt="Mortel- Quiz#1: ScreenShot" width="100%">
+          </div>
+        </div>
+<!-- Reflection -->
+        <div id="quiz-ref" class="activity" style="display: none;">
+          <div class="Content-Text">
+            <p class="Content-HeadText">Reflection</p>
+            <div class="Reflection-Content">
+              <p>
+                I can say that the only quiz we took in this subject wasn't that easy but also wasn't that hard. All 
+                the concepts and terminologies where discussed well yet for me, learning database administration is a 
+                new knowledge that is something i need to master in the future. Designing is my forte and monitoring 
+                back-end and databases is my weakness yet in this quiz, I got 28/30. Happy with the result yet i know 
+                that those are just concepts and not a hands-on test therefore, i told my self that I have to enhance 
+                my skills and widen my understanding about this subject.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+      </div>
+    </div>
+  </div>
+      <script src="dascript.js"></script>
+      <footer>
+        <p>@MegMortel | BSIT 3-1N</p>
+      </footer>
+</body>
+</html>

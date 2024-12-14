@@ -1,0 +1,448 @@
+
+@font-face {
+    font-family: Ganiga;
+    src: url(Fonts/ganiga.otf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(Fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Semi;
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Med;
+    src: url(Fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Reg;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+
+.ganiga-style   {
+    font-family: Ganiga;
+}
+
+.poppins-med-style  {
+    font-family: Poppins-Med;
+    font-size: 18px;
+}
+
+/* Navigation Bar */
+
+#navigationHead{
+    position:fixed;
+    width: 100%;
+    background-color: #FEF3FF;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 500;
+}
+
+.nav-item   {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: Poppins-Semi;
+    color: black;
+}
+
+.nav-item a {
+    color: black;
+}
+
+nav div ul li:hover {
+    color: #971881;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 3px;
+    border-style: solid;
+    
+}
+
+nav div ul li:focus {
+    color: #971881;
+}
+
+nav div ul li a:hover {
+    color: #971881;
+}
+
+
+.navbar-brand    {
+    padding-left: 60px;
+}
+
+#dropDownMenu   {
+    padding-right: 10px;
+}
+
+#dropdownMenuLink   {
+    background-color: #971881;
+    font-family: Poppins-Semi;
+    font-size: 15px;
+}
+
+.dropdown-menu a   {
+    font-family: Poppins-Reg;
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover   {
+    background-color: #FDD245;
+    font-family: Poppins-Semi;
+    font-size: 15px;
+}
+
+/* Home Page Layout */
+.Home-Page {
+    /* border: 4px solid red; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    clear: both;
+    display: flex;
+}
+
+.Home-image {
+    /* border: 4px solid black; */
+    float: right;
+    margin-right: 80px;
+    flex: 1;
+}
+
+.Home-image img {
+    height: auto;
+    max-height: 600px;
+}
+
+.Home-texts {
+    /* border: 4px solid brown; */
+    float: left;
+    margin-top: 150px;
+    margin-left: 100px;
+    color: #362337;
+    flex: 1;
+}
+
+.Home-hey   {
+    font-family: Poppins-Semi;
+    font-size: 20px;
+}
+
+.Home-name  {
+    font-family: Ganiga;
+    font-size: 80px;
+    color: #971881;
+}
+
+.Home-subtext   {
+    font-family: Poppins-Med;
+    font-size: 18px;
+}
+
+
+
+/* About Page */
+
+.About-Page {
+    background-color: #46C1A4;
+    height: 720;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    clear: both;
+    display: flex;
+}
+
+.About-Left {
+    /* border: 3px solid black; */
+    padding: 20px;
+    flex: 60%;
+    text-align: center;
+}
+
+.About-Left img {
+    margin-top: 30px;
+    height: auto;
+    max-height: 600px;
+}
+
+.About-Right    {
+    /* border: 3px solid black; */
+    flex: 40%;
+    padding-left: 20px;
+    padding-top: 80px;
+}
+.About-Text {
+    font-family: Poppins-Med;
+    font-size: 15px;
+    color: #FEF3FF;
+}
+
+.About-Who  {
+    font-family: Ganiga;
+    font-size: 30px;
+    color: #FEF3FF;
+}
+.Typo-Meg   {
+    font-family: Poppins-Med;
+    font-size: 30px;
+    color: #FDD245;
+}
+
+.About-Content  {
+    color: #FEF3FF;
+    font-family: Poppins-Reg;
+    font-size: 14px;
+}
+
+/* Skill Page */
+
+.Skill-Page {
+    height: 800px;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    clear: both;
+
+    font-family: Poppins-Reg;
+}
+
+.Skill-Left {
+    flex: 30%;
+    /* border: 3px solid pink; */
+}
+
+.Skill-Right    {
+    flex: 70%;
+    /* border: 3px solid pink; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Skill-Right-Title  {
+    padding: 10px;
+    font-family: Ganiga;
+    font-size: 24px;
+
+}
+
+.Skill-Text {
+    font-family: Poppins-Med;
+    font-size: 15px;
+    color: #362337;
+
+    padding-top: 50px;
+}
+
+.Skill-What {
+    font-family: Ganiga;
+    font-size: 35px;
+    color: #362337;
+
+    padding-top: 100px;
+}
+
+.Skill-Content  {
+    font-family: Poppins-Reg;
+    font-size: 14px;
+
+    padding-top: 50px;
+}
+
+.Skill-Right-Up {
+    flex: 60%;
+    background-color: #1F2269;
+    color: #FEF3FF;
+    text-align: center;
+
+    margin: 15px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0px black;
+}
+
+div.row {
+    border: 1px solid white;
+    margin: 15px;
+}
+
+#Skill-Name {
+    text-align: right;
+    background-color: #971881;
+
+    font-family: Ganiga;
+}
+
+#Skill-Name-Design {
+    text-align: right;
+    background-color: #FDD245;
+
+    font-family: Ganiga;
+}
+
+.Skill-Right-Down {
+    flex: 40%;
+    background-color: #612EA7;
+    color: #FEF3FF;
+    text-align: center;
+
+    margin: 15px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0px black;
+}
+
+.Skill-SoftSkillList  li  {
+    list-style: none;
+    padding-bottom: 5px;
+    padding-right: 30px;
+}
+
+/* Banner */
+
+.banner-style   {
+    padding-top: 40px;
+}
+
+/* Contact Page */
+
+.Contact-Page {
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    clear: both;
+}
+
+.Contact-Up {
+    flex:30%;
+    /* border: 3px solid pink; */
+}
+
+.Contact-Me {
+    font-family: Poppins-Med;
+    font-size: 15px;
+    text-align: center;
+    color: #362337;
+}
+
+.Contact-Let    {
+    font-family: Ganiga;
+    font-size: 27px;
+    text-align: center;
+    color: #971881;
+}
+
+
+.Contact-Down   {
+    flex: 70%;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.Contact-Down-Left  {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+    text-align: center;
+
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+/* icons */
+.Icon-Up    {
+    display: flex;
+    /* border: 3px solid blue; */
+}
+
+.Icon-Up-Left   {
+    flex: 1;
+    /* border: 3px solid pink; */
+}
+.Icon-Up-Right   {
+    flex: 1;
+    /* border: 3px solid fuchsia; */
+}
+
+.Icon-Down  {
+    display: flex;
+    /* border: 3px solid red; */
+}
+
+.Icon-Down-Left   {
+    flex: 1;
+    /* border: 3px solid pink; */
+}
+.Icon-Down-Right   {
+    flex: 1;
+    /* border: 3px solid fuchsia; */
+}
+
+div.Contact-Down-Left a img{
+    height: 150px;
+}
+
+.Contact-Down-Right {
+    flex: 60%;
+    /* border: 3px solid yellow; */
+}
+
+.Contact-Down-Content   {
+    background-color: #FDD245;
+    font-family: Poppins-Reg;
+    font-size: 15px;
+    color: black;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border: 3px solid black;
+    box-shadow: 4px 4px 0px black;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+}
+
+.Data-Name  {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.Data-Meg   {
+    flex: 2;
+}
+
+
+/* Footer */
+footer  {
+    background-color: #362337;
+
+    text-align: right;
+    color: white;
+    font-family: Poppins-Med;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+}
+

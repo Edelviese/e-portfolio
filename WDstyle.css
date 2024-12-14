@@ -1,0 +1,337 @@
+/* Web Development Style Sheet */
+@font-face {
+    font-family: Ganiga;
+    src: url(Fonts/ganiga.otf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(Fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Semi;
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Med;
+    src: url(Fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Reg;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+
+
+.ganiga-style   {
+    font-family: Ganiga;
+}
+
+.poppins-med-style  {
+    font-family: Poppins-Med;
+    font-size: 18px;
+}
+
+/* Navigation Bar */
+
+#navigationHead{
+    position:sticky;
+    width: 100%;
+    background-color: #FEF3FF;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 500;
+}
+
+.nav-item   {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: Poppins-Semi;
+    color: black;
+}
+
+.nav-item a {
+    color: black;
+}
+
+nav div ul li:hover {
+    color: #971881;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 3px;
+    border-style: solid;
+    
+}
+
+nav div ul li a:hover {
+    color: #971881;
+}
+
+.navbar-brand    {
+    padding-left: 60px;
+}
+
+#dropDownMenu   {
+    padding-right: 10px;
+}
+
+#dropdownMenuLink   {
+    background-color: #971881;
+    font-family: Poppins-Semi;
+    font-size: 15px;
+}
+
+.dropdown-menu a   {
+    font-family: Poppins-Reg;
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover   {
+    background-color: #FDD245;
+    font-family: Poppins-Semi;
+    font-size: 15px;
+}
+
+/* Web Development Header */
+
+.WebDev-Header  {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 4px; */
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.WebDev-Title   {
+    flex: 2;
+    /* border: solid 3px pink; */
+    text-align: center;
+    background-color: #612EA7;
+
+    margin-bottom: 40px
+}
+
+.page-title {
+    color: #FEF3FF;
+    font-family: Ganiga;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.midterm-final  {
+    color: #FEF3FF;
+
+    font-size: 25px;
+    font-family: Poppins-Semi;
+
+    padding-bottom: 30px;
+}
+
+.midterm-final a {
+    color: #FEF3FF;
+
+    font-size: 25px;
+    font-family: Poppins-Semi;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.midterm-final a:focus{
+    color: white;
+    text-decoration: none;
+}
+
+.WebDev-Buttons {
+    flex: 1;
+    /* border: solid 3px red; */
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+.WebDev-Buttons p {
+    font-family: Ganiga;
+    font-size: 20px;
+    color: black;
+
+    border: solid 3px black;
+    border-radius: 30px;
+    box-shadow: 4px 4px 0px black;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    background-color: #FDD245;
+}
+
+.WebDev-Buttons a{
+    color: black;
+}
+
+.WebDev-Buttons a:hover{
+    color: white;
+}
+
+.WebDev-Buttons p:hover {
+    color: white;
+    background-color: #FE2494;
+}
+
+.WebDev-Buttons p:focus {
+    color: white;
+    background-color: #FE2494;
+}
+
+.WebDev-Button-Quiz, .WebDev-Button-Activity, .WebDev-Button-Exam {
+    flex: 1;
+    /* border: solid 2px blue; */
+}
+
+#chosen-category  a p  {
+    color: white;
+    background-color: #FE2494;
+}
+
+
+/* WebDev Content: Quiz, HW, Exam (style) */
+
+.WebDev-Content {
+    /* border: solid 3px black; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    clear: both;
+}
+
+.Content-Section   {
+    padding-left: 80px;
+    padding-right: 80px;
+    /* display: flex;
+    flex-direction: row; */
+    /* border: solid 3px red; */
+}
+
+.pagination li {
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px black;
+    list-style: none;
+}
+
+.pagination li a    {
+    font-family: Ganiga;    
+    font-size: 12px;
+    color: black;
+    display: inline-block;
+}
+
+.pagination li a:hover    {
+    font-family: Ganiga;    
+    font-size: 12px;
+    color: white;
+    background-color: #612EA7;
+}
+
+.pagination li a:focus    {
+    font-family: Ganiga;    
+    font-size: 12px;
+    color: white;
+    background-color: #612EA7;
+}
+
+
+
+/* Content */
+
+.Content   {
+    /* flex: 75%; */
+    border: solid 3px black;
+    border-radius: 30px;
+    box-shadow: 4px 4px 0px black;
+    margin-top: 50px;
+}
+
+.table{
+    border: 3px solid #971881;
+    border-radius: 30px;
+}
+
+tr {
+    background-color: #FE2494;
+    color: white;
+}
+
+.Content-Text  {
+    font-family: Poppins-Reg;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Content-HeadText  {
+    font-family: Ganiga;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Content-Text p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Reflection-Content{
+    color: #FEF3FF;
+    padding: 50px;
+    border: 2px solid black;
+    background-color: #612EA7;
+}
+
+
+.File-Link a {
+    text-decoration: none;
+    color: #FDD245;
+    font-family: Poppins-Semi;
+}
+
+.File-Preview   {
+    font-family: Poppins-Reg;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.File-Preview img {
+    border: solid 3px black;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+
+footer  {
+    background-color: #362337;
+
+    text-align: right;
+    color: white;
+    font-family: Poppins-Med;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+}

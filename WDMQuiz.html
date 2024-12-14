@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WDstyle.css">
+    <link rel="icon" href="Images/logonimeg.png">
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Mortel: E-Portfolio | Web Development - Quiz</title>
+</head>
+
+<body style="background-color: #F8F4F8;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navigationHead">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logonimeg.png" alt="Mortel Logo" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+  <!-- nav home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home" id="go-to-home">Home</a>
+          </li>
+  <!-- nav about -->
+          <li class="nav-item">
+            <a class="nav-link" href="#About" id="go-to-about">About</a>
+          </li>
+  <!-- nav skills -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills" id="go-to-skills">Skills</a>
+          </li>
+  <!-- nav contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact" id="go-to-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown show btn-group dropleft" id="dropDownMenu">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        WebDev
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <p class="dropdown-header">Midterm</p>
+        <a class="dropdown-item" href="WDMQuiz.html">Quizzes</a>
+        <a class="dropdown-item" href="WDMActivities.html">Activities</a>
+        <a class="dropdown-item" href="WDMExams.html">Exams</a>
+        <p class="dropdown-header">Finals</p>
+        <a class="dropdown-item" href="webdevFINAL.html">Quizzes</a>
+        <a class="dropdown-item" href="webdevFINAL.html">Activities</a>
+        <a class="dropdown-item" href="webdevFINAL.html">Exams</a>
+      </div>
+    </div>
+
+    <div class="dropdown show btn-group dropleft"  id="dropDownMenu">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        DataAd
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <p class="dropdown-header">Midterm</p>
+        <a class="dropdown-item" href="DAquiz.html">Quizzes</a>
+        <a class="dropdown-item" href="DAActivities.html">Activities</a>
+        <a class="dropdown-item" href="DAexam.html">Exams</a>
+        <p class="dropdown-header">Finals</p>
+        <a class="dropdown-item" href="dataAdFINAL.html">Quizzes</a>
+        <a class="dropdown-item" href="dataAdFINAL.html">Activities</a>
+        <a class="dropdown-item" href="dataAdFINAL.html">Exams</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="WebDev-Header">
+    <div class="WebDev-Title">
+      <p class="page-title">WEB<br>DEVELOPMENT</p>
+      <div>
+        <div class="midterm-final">
+          <a href="WDMQuiz.html"><u>Midterm</u></a>
+          <a href="webdevFINAL.html">Final</a>
+        </div>
+      </div>
+    </div>
+    <div class="WebDev-Buttons">
+      <div class="WebDev-Button-Quiz" id="chosen-category">
+        <a href="WDMQuiz.html"><p>Quizzes</p></a>
+      </div>
+      <div class="WebDev-Button-Activity">
+        <a href="WDMActivities.html"><p>Activities</p></a>
+      </div>
+      <div class="WebDev-Button-Exam">
+        <a href=""><p>Exams</p></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="WebDev-Content">
+    <div class="Content-Section">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#WebDev-Content" onclick="showQuiz('quiz-one')">Quiz 1</a></li>
+          <li class="page-item"><a class="page-link" href="#WebDev-Content" onclick="showQuiz('quiz-two')">Quiz 2</a></li>
+          <li class="page-item"><a class="page-link" href="#WebDev-Content" onclick="showQuiz('quiz-ref')">Reflection</a></li>
+        </ul>
+      </nav>
+      <div class="Content" id="quizContent">
+<!-- Quiz 1 -->
+        <div id="quiz-one" class="quizzes" style="display: none;">
+          <div class="Content-Text">
+            <p class="Content-HeadText">Quiz Details</p>
+            <table class="table">
+              <tbody>
+                <tr class="Number">
+                  <th scope="row">Quiz Number</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th scope="row">Due Date</th>
+                  <td>October 22</td>
+                </tr>
+                <tr>
+                  <th scope="row">Date Submitted</th>
+                  <td>October 22</td>
+                </tr>
+                <tr class="Score">
+                  <th scope="row">Score</th>
+                  <td>28/30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="File-Preview">
+            <p class="Content-HeadText">Preview:</p>
+            <img src="Images/WebDev/Quizzes/QUIZ1_Mortel.png" alt="Mortel- Quiz#1: ScreenShot" width="100%">
+          </div>
+        </div>
+<!-- Quiz 2 -->
+        <div id="quiz-two" class="quizzes" style="display: none;">
+          <div class="Content-Text">
+            <p class="Content-HeadText">Quiz Details</p>
+            <table class="table">
+              <tbody>
+                <tr class="Number">
+                  <th scope="row">Quiz Number</th>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <th scope="row">Due Date</th>
+                  <td>November 5</td>
+                </tr>
+                <tr>
+                  <th scope="row">Date Submitted</th>
+                  <td>November 5</td>
+                </tr>
+                <tr class="Score">
+                  <th scope="row">Score</th>
+                  <td>12/40</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="File-Preview">
+            <p class="Content-HeadText">Preview:</p>
+            <img src="Images/WebDev/Quizzes/QUIZ2_Mortel.png" alt="Mortel- Quiz#2: ScreenShot" width="100%">
+          </div>
+        </div>
+<!-- Reflection -->
+      <div id="quiz-ref" class="activity" style="display: none;">
+        <div class="Content-Text">
+          <p class="Content-HeadText">Reflection</p>
+          <div class="Reflection-Content">
+            <p>
+              Looking back from the moments where I was answering quizzes in webdevelopment, i knew that I had 
+              challenged my critical thinking and memory. 
+              <br> <br>
+              For Quiz 1, Web Development HTML and CSS syntaxes was not new to me but it's been a long time since I 
+              used the two langauges, therefore, during discussions I enjoyed while recalling the familiar words and 
+              syntaxes mentioned by our professor as well as the words that I was confused before, became clear. 
+              (Example of this scenario is identifying the difference of id and class, now i know that their symbols 
+              are different; the hash(#) for id and period(.) for class). In this Quiz, I got 28/30 and i was happy 
+              with the results.
+              <br><br>
+              For the Quiz 2, i know i was not prepared as i did not read much about the coverage topic here. I only 
+              got 12/40 and told my self, "bawi next time hehe" Yet, because of the low score I got on this quiz, it 
+              made me eager to expand more my knowledge in these subject and do some advance readings to prepare just 
+              incase there is an unexpected one. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- break -->
+      </div>
+    </div>
+  </div>
+      <script src="wdscript.js"></script>
+      <footer>
+        <p>@MegMortel | BSIT 3-1N</p>
+      </footer>
+</body>
+</html>
